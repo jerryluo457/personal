@@ -14,38 +14,46 @@ const Portfolio = () => {
       }}>
         Selected Works
       </h1>
+      {/* --- 2026 Projects --- */}
+      <YearDropdown year="2026">
+        <PortfolioItem 
+          title="Agentic Market Simulator"
+          link="https://github.com/jerryluo457/AgenticMarketSim"
+          description="The Agentic Market Simulator is a high-performance, agent-based modeling system designed to simulate financial market microstructure and limit order book dynamics in real-time. The project visualizes the interactions between various autonomous trading agents and a human user, demonstrating phenomena such as liquidity crises, mean reversion, and momentum-driven volatility.
 
+The system is architected as a hybrid application: a high-speed C++ engine handles the order book matching and agent logic, while a Python/FastAPI server manages the WebSocket communication to a web-based frontend dashboard."
+          tech={["C++", "Python", "LightweightCharts", "ZeroMQ"]}
+        />
+      </YearDropdown>
       {/* --- 2025 Projects --- */}
       <YearDropdown year="2025">
-        <PortfolioItem 
-          title="Neural Ordinary Differential Equations"
-          role="Research Assistant (UW-Madison Dept. of Math)"
-          description="Studied continuous-depth modeling and the adjoint sensitivity method. Implemented Neural ODE frameworks in JAX and PyTorch, achieving a 94.9% error reduction over ResNet baselines on planetary orbit prediction."
-          tech={["JAX", "PyTorch", "Python", "Differential Equations"]}
+      <PortfolioItem 
+          title="American Options Pricing Engine"
+          link="https://github.com/jerryluo457/basicoptionpricing"
+          description="high-performance computational finance tool designed to price American Options using a vectorized Binomial Tree (Cox-Ross-Rubinstein) model and concepts from dynamic programming."
+          tech={["Python", "Dynamic Programming", "Binomial Tree"]}
         />
+
         <PortfolioItem 
-          title="Materials Science AI Optimization"
-          role="AI/ML Researcher"
-          description="Developed and optimized PyTorch models on CUDA GPUs to predict material properties. Achieved >85% accuracy across all models and created visualization tools using Matplotlib and Seaborn."
-          tech={["PyTorch", "CUDA", "Computer Vision", "Matplotlib"]}
+          title="Implementations of Theoretical Algirthms"
+          link="https://github.com/jerryluo457/algocollection"
+          description="A comprehensive collection of fundamental algorithms implemented in C. This repository covers graph theory, greedy strategies, dynamic programming, and advanced network analysis."
+          tech={["Python", "Algorithms"]}
         />
         <PortfolioItem 
           title="Campus Travel Time Guide"
-          role="Full Stack Developer"
+          link="https://github.com/jerryluo457/campusmap"
           description="Designed a routing application using Dijkstra's Algorithm to find shortest paths on campus. Built a custom generic Hashtable with dynamic resizing and chaining for collision resolution."
           tech={["Java", "JUnit5", "Algorithms", "Data Structures"]}
         />
-      </YearDropdown>
-
-      {/* --- 2024 Projects --- */}
-      <YearDropdown year="2024">
         <PortfolioItem 
           title="Cache Simulator"
-          role="Systems Programmer"
+          link="https://github.com/jerryluo457/cachesim"
           description="Built a low-level cache simulator in C that handles dynamic memory allocation. Simulated memory traces to analyze cache hits, misses, and evictions using an LRU (Least Recently Used) policy."
           tech={["C", "Linux", "Memory Management", "Systems Programming"]}
         />
       </YearDropdown>
+
 
     </div>
   );
