@@ -1,6 +1,7 @@
 import React from 'react';
 import { theme } from '../theme';
 import uwLogo from '../assets/Wisconsin_Badgers_logo.svg';
+import PortfolioItem from '../components/PortfolioItem';
 
 // --- Reusable Education Card Component ---
 const EducationCard = ({ logo, degree, years, school }) => {
@@ -60,7 +61,7 @@ const Home = () => {
         <p style={{ lineHeight: '1.7', fontSize: '1.05rem' }}>
           I am a sophomore and first-generation college student at the University of Wisconsin-Madison.
           My academic focus lies at the intersection of rigorous mathematics and computer science, 
-          specifically within deep learning and dynamical systems.
+          specifically within the computational sciences and financial mathematics.
         </p>
       </section>
 
@@ -75,16 +76,31 @@ const Home = () => {
           school="University of Wisconsin-Madison, CDIS & L&S"
         />
       </section>
+      {/* Project Highlight secion */}
+      <section style={{ marginTop: '40px' }}>
+        <h2 style={{ color: theme.colors.primaryRed }}>Recent Projects</h2>
+            <PortfolioItem 
+              title="Oligarchy Simulator"
+              link="https://github.com/jerryluo457/OligarchySim"
+              description="A computational model exploring Economic Elite Domination theory. This interactive simulation visualizes how democratic responsiveness decays when policy outcomes systematically favor elite interests over the public will. It draws on theoretical frameworks from Gilens & Page (2014) and Jeffrey Winters (2011) to model the tension between electoral democracy and oligarchic capture."
+              tech={["Python", "streamlit"]}
+            />
+            <PortfolioItem 
+              title="Agentic Market Simulator"
+              link="https://github.com/jerryluo457/AgenticMarketSim"
+              description="The Agentic Market Simulator is a high-performance, agent-based modeling system designed to simulate financial market microstructure and limit order book dynamics in real-time. The project visualizes the interactions between various autonomous trading agents and a human user, demonstrating phenomena such as liquidity crises, mean reversion, and momentum-driven volatility.
 
+    The system is architected as a hybrid application: a high-speed C++ engine handles the order book matching and agent logic, while a Python/FastAPI server manages the WebSocket communication to a web-based frontend dashboard."
+              tech={["C++", "Python", "LightweightCharts", "ZeroMQ"]}
+            />
+      </section>
       {/* Research Highlight Section */}
       <section style={{ marginTop: '40px' }}>
         <h2 style={{ color: theme.colors.primaryRed }}>Current Research Focus</h2>
         <div style={{ padding: '20px', backgroundColor: theme.colors.lightBg, borderLeft: `4px solid ${theme.colors.primaryRed}` }}>
-          <h3 style={{ marginTop: 0 }}>Neural Ordinary Differential Equations</h3>
+          <h3 style={{ marginTop: 0 }}>TBD</h3>
           <p style={{ margin: 0 }}>
-            I am currently researching continuous-depth modeling at the UW-Madison Department of Mathematics. 
-            My work involves implementing frameworks in JAX and PyTorch to model physical systems like planetary orbits, 
-            achieving significant error reduction over traditional ResNet baselines.
+            TBD
           </p>
         </div>
       </section>
