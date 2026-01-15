@@ -17,6 +17,12 @@ const Portfolio = () => {
       {/* --- 2026 Projects --- */}
       <YearDropdown year="2026">
         <PortfolioItem 
+          title="Oligarchy Simulator"
+          link="https://github.com/jerryluo457/OligarchySim"
+          description="A computational model exploring Economic Elite Domination theory. This interactive simulation visualizes how democratic responsiveness decays when policy outcomes systematically favor elite interests over the public will. It draws on theoretical frameworks from Gilens & Page (2014) and Jeffrey Winters (2011) to model the tension between electoral democracy and oligarchic capture."
+          tech={["Python", "streamlit"]}
+        />
+        <PortfolioItem 
           title="Agentic Market Simulator"
           link="https://github.com/jerryluo457/AgenticMarketSim"
           description="The Agentic Market Simulator is a high-performance, agent-based modeling system designed to simulate financial market microstructure and limit order book dynamics in real-time. The project visualizes the interactions between various autonomous trading agents and a human user, demonstrating phenomena such as liquidity crises, mean reversion, and momentum-driven volatility.
